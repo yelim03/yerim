@@ -25,7 +25,6 @@ const sec5 = () => {
   console.log("sec5");
 };
 
-const sec2_reset = () => {};
 
 // fullpage
 new fullpage("#fullpage", {
