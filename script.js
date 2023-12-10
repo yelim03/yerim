@@ -8,7 +8,24 @@ Nav_btn.addEventListener("click", () => {
 
 const sec0 = () => {};
 const sec1 = () => {
-  
+  const skills = document.querySelectorAll(".skill li");
+  const skillIcons = document.querySelectorAll(".skill li img");
+  const skillTexsts = document.querySelectorAll(".skill li span");
+
+  skillTexsts.forEach((skillText) => {
+    skillText.style.opacity = "0";
+  });
+
+  skills.forEach((skill, index) => {
+    skill.addEventListener("mouseover", () => {
+      skillTexsts[index].style.opacity = "1";
+      skillIcons[index].style.opacity = "0";
+    });
+    skill.addEventListener("mouseout", () => {
+      skillTexsts[index].style.opacity = "0";
+      skillIcons[index].style.opacity = "1";
+    });
+  });
 };
 const sec2 = () => {
   console.log("sec2");
@@ -19,9 +36,6 @@ const sec3 = () => {
 const sec4 = () => {
   console.log("sec4");
 };
-const sec5 = () => {
-  console.log("sec5");
-};
 
 // fullpage
 new fullpage("#fullpage", {
@@ -29,7 +43,7 @@ new fullpage("#fullpage", {
   autoScrolling: true,
   scrollHorizontally: true,
   navigation: true,
-  anchors: ["Num0", "Num1", "Num2", "Num3", "Num4", "Num5"],
+  anchors: ["Num0", "Num1", "Num2", "Num3"],
   afterLoad: (old_elem, new_elem, direction) => {
     if (new_elem.index === 0) {
       sec0();
