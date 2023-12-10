@@ -12,12 +12,12 @@ li {
 }
 a {
   text-decoration: none;
-  color: #256b34;
+  color: #085a9f;
 }
 body {
   font-size: 10px;
   font-family: "Literata", serif;
-  color: #256b34;
+  color: #085a9f;
 }
 
 nav {
@@ -48,7 +48,7 @@ nav ul li a {
 /* fullpage 네비 바 커스텀마이징 */
 #fp-nav ul li a span,
 #fp-slidesNav ul li a span {
-  background: #256b34;
+  background: #085a9f;
 }
 
 /* background */
@@ -64,7 +64,7 @@ nav ul li a {
 
 /* Common CSS*/
 .inner {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,14 +73,13 @@ nav ul li a {
   padding: 3%;
 }
 .commonWrap {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 100%;
   height: 90%;
   display: flex;
   flex-direction: column;
 }
 .commonTitle {
-  border: 1px solid blue;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -91,24 +90,19 @@ nav ul li a {
   font-size: 2.5rem;
   margin-right: 2.5rem;
 }
-.commonTitle .titleBar {
-  width: inherit;
-  height: 3px;
-  background: #256b34;
-}
 
 /* Home CSS */
 #sec0 .inner {
   position: fixed;
   height: 90%;
   bottom: 0;
-  background: url(./img/sec0_bg.jpg) center center/cover no-repeat;
+  background: url(./img/sky.jpg) center center/cover no-repeat;
 }
 .homeWrap {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 }
 .homeText {
@@ -118,6 +112,7 @@ nav ul li a {
   align-items: center;
   line-height: 0.9;
   padding-bottom: 3rem;
+  margin-left: 4rem;
   color: #fff;
 }
 .homeText h1 {
@@ -129,7 +124,6 @@ nav ul li a {
   letter-spacing: 1rem;
   padding-left: 0.6rem;
 }
-
 /* About CSS */
 .aboutTextBox {
   width: 100%;
@@ -148,24 +142,29 @@ nav ul li a {
   padding: 2%;
 }
 .aboutCommon h3 {
+  border: 1px solid #085a9f;
+  border-radius: 30px;
   font-size: 1.4rem;
+  padding: 0 0.7rem;
   margin-bottom: 1.5rem;
 }
-
 .aboutImg {
   grid-area: aboutImg;
 }
 .aboutMe {
-  border: 1px solid aqua;
   grid-area: aboutMe;
 }
 .aboutCommon ul {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
+  padding-left: 0.7rem;
 }
 .aboutCommon li {
   font-size: 1rem;
+}
+.aboutCommon ul b {
+  margin-right: 1rem;
 }
 .education {
   grid-area: education;
