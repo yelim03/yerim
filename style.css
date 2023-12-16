@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,700&display=swap");
-
-/* reset */
+/*-----Reset-----*/
 * {
   margin: 0;
   padding: 0;
@@ -12,392 +10,130 @@ li {
 }
 a {
   text-decoration: none;
-  color: #085a9f;
-}
-body {
-  font-size: 10px;
-  font-family: "Literata", serif;
-  color: #085a9f;
-}
-
-nav {
-  /* border: 1px solid red; */
-  position: fixed;
-  width: 100%;
-  height: 10%;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  padding-right: 2rem;
-  background: rgba(255, 255, 255, 0.7);
-}
-nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.7rem;
-}
-nav ul li a {
-  font-weight: 400;
-  font-size: 1.1rem;
-}
-
-/* fullpage 네비 바 커스텀마이징 */
-#fp-nav ul li a span,
-#fp-slidesNav ul li a span {
-  background: #085a9f;
-}
-
-/* background */
-#sec0,
-#sec1,
-#sec2,
-#sec3,
-#sec4,
-#sec5 {
-  background: #fff;
-}
-/* wow js 섹션별로 사용이 가능 */
-
-/* Common CSS*/
-.inner {
-  /* border: 1px solid red; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  padding: 3%;
-}
-.commonWrap {
-  /* border: 1px solid red; */
-  width: 100%;
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-}
-.commonTitle {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0 2%;
-}
-.commonTitle h1 {
-  font-size: 2.5rem;
-  margin-right: 2.5rem;
-}
-
-/* Home CSS */
-#sec0 .inner {
-  position: relative;
-  padding: 0 3%;
-}
-.homeWrap {
-  width: 100%;
-  height: 80%;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  background: #085a9f;
-  /* background-image: linear-gradient(to top, #0075fb 0%, #0c62ec 100%); */
-}
-.homeText {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  line-height: 0.9;
-  padding-left: 5%;
-  padding-bottom: 3rem;
-  margin-left: 4rem;
   color: #fff;
 }
-.homeText h1 {
-  font-size: 11rem;
-  font-weight: 500;
-}
-.homeText p {
-  font-size: 1.6rem;
-  letter-spacing: 1rem;
-  padding-left: 0.6rem;
-}
-.homeScrollWrap {
-  /* border: 1px solid red; */
-  position: absolute;
-  bottom: 2.5%;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2px;
-}
-.homeScrollWrap p {
-  font-size: 0.8rem;
-  color: #085a9f;
-}
-.homeScroll {
-  position: relative;
-  border: 0.2rem solid #085a9f;
-  border-radius: 4rem;
-  width: 2rem;
-  height: 3rem;
-  animation: homeScroll 0.9s infinite;
-}
-.homeScroll span {
-  position: absolute;
-  width: 0.2rem;
-  height: 0.7rem;
-  border-radius: 0.5rem;
-  top: 0.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #085a9f;
-}
-@keyframes homeScroll {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(5px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+html,
+body,
+h1,
+span {
+  background: #000;
+  color: #fff;
+  font-size: 10px;
 }
 
-/* About CSS */
-.aboutTextBox {
+/*-----Header-----*/
+header {
+  border: 1px solid aqua;
   width: 100%;
-  display: grid;
-  grid-template-areas:
-    "aboutImg education"
-    "aboutImg certificate"
-    "aboutMe skill";
-  grid-template-columns: 4fr 5fr;
-}
-.aboutCommon {
-  /* border: 1px solid red; */
+  position: fixed;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  padding: 2%;
-  padding-left: 8%;
-}
-.aboutCommon h3 {
-  /* border: 1px solid #085a9f;
-  border-radius: 30px; */
-  font-size: 1.6rem;
-  padding: 0 0.7rem;
-  margin-bottom: 1.5rem;
-}
-.aboutImg {
-  grid-area: aboutImg;
-}
-.aboutMe {
-  grid-area: aboutMe;
-  padding-top: 0;
-}
-.aboutMe h3 {
-  font-size: 3.2rem;
-  border: none;
-}
-.aboutCommon ul {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  padding-left: 0.7rem;
-}
-.aboutCommon li {
-  font-size: 1rem;
-}
-.aboutCommon ul b {
-  margin-right: 1rem;
-}
-.education {
-  grid-area: education;
-}
-.certificate {
-  grid-area: certificate;
-}
-.skill {
-  grid-area: skill;
-}
-.skill ul {
   flex-direction: row;
-  gap: 2rem;
+  justify-content: space-between;
+  padding: 1rem 1.2rem;
 }
-.skill li {
-  position: relative;
-  cursor: pointer;
-}
-.skill li img {
-  transition: all 0.4s;
-}
-.skill li span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 0.8rem;
-  font-weight: 400;
-  transform: translate(-50%, -50%);
-  transition: all 0.4s;
+.header {
+  font-size: 3.5rem;
+  font-weight: bold;
 }
 
-/* WorkSilde CSS */
-.workSlideWrap {
+/*-----Section-----*/
+section {
+  /* position: relative; */
+  width: 100%;
+  height: 100vh;
+}
+/*-----Intro-----*/
+.introWrap {
+  /* display: none; */
   border: 1px solid red;
   width: 100%;
   height: 100%;
   display: flex;
-  flex-wrap: nowrap;
-  overflow: hidden;
-  position: relative;
-  user-select: none;
-}
-.slideItem {
-  display: flex;
-  align-items: center;
   justify-content: center;
-  position: relative;
+  align-items: center;
+}
+.introWrap h1 {
+  /* display: none; */
+  font-size: 8rem;
+  transition: opacity 0.2s ease-in-out;
+  letter-spacing: 1rem;
+}
+/*-----Work-----*/
+.workWrap {
+  /* position: absolute; */
+  border: 1px solid #fff;
+  width: 100%;
+  height: 100%;
+  top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  flex-shrink: 0;
 }
-.slideBtn {
+.workText {
+  border: 1px solid pink;
+  width: 100%;
+  height: 30rem;
   display: flex;
   justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: calc(50% - 1.6rem);
-  width: 3.2rem;
-  height: 3.2rem;
-  cursor: pointer;
+  align-items: end;
+  top: 0;
+  left: 0;
 }
-.slideBtn i {
-  font-size: 3.5rem;
+.workText h1 {
+  font-size: 7rem;
 }
-.slidePrevBtn {
-  left: 1rem;
-}
-.slideNextBtn {
-  right: 1rem;
-}
-.slideItem.item1 {
-  background: darkgoldenrod;
-}
-.slideItem.item2 {
-  background: pink;
-}
-.slideItem.item3 {
-  background: blueviolet;
-}
-.slideItem.item4 {
-  background: green;
-}
-.slidePagination {
-  display: flex;
-  gap: 0.5rem;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.slidePagination > li {
-  color: #085a9f;
-  cursor: pointer;
-  font-size: 2.5rem;
-}
-.slidePagination > li.active {
-  color: #085a9f;
-}
-.slideItemDuplicate {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  left: 0px;
+.categoryWrap {
+  border: 1px solid yellow;
   width: 100%;
-  height: 300px;
-  flex-shrink: 0;
-  transition: left 0.15s;
-}
-/* Contact CSS */
-#sec4 .inner {
-  /* background: url(./img/main_bg.png) center center/cover no-repeat; */
-}
-#sec4 .commonWrap {
-  width: 100%;
-  height: 80%;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  background: #085a9f;
-}
-#sec4 .commonTitle h1 {
-  color: #fff;
-}
-.contactTextBox {
-  width: 100%;
-  height: 100%;
-  padding: 5%;
-  color: #fff;
-}
-.contactTextBox .contactText h4 {
-  font-size: 3rem;
-  font-weight: 400;
-}
-.contactTextBox .contactText h4 em {
-  font-size: 9rem;
-}
-.contactSnsWrap {
+  padding-top: 1.5rem;
+  padding-right: 2rem;
   display: flex;
   flex-direction: row;
-  gap: 1.2rem;
-  justify-content: center;
+  justify-content: end;
+  gap: 0.5rem;
 }
-.contactSnsWrap .sns a {
+.categoryBtn {
+  border: 0.2rem solid #fff;
+  border-radius: 0.5rem;
+  width: 8rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+.categoryBtn a {
+  font-size: 1.5rem;
+  font-weight: normal;
+  transition: all 0.3s;
+}
+.categoryBtn:hover {
+  box-shadow: 1px 1px 10px #fff;
+}
+.categoryBtn:hover a {
+  font-weight: bold;
+}
+.contentWrap {
+  border: 1px solid #f09;
+  width: 100%;
+  height: 110%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.content {
   border: 1px solid #fff;
-  display: inline-block;
-  width: 13rem;
-  height: 3rem;
-  text-align: center;
-  line-height: 3rem;
-  color: #fff;
-  font-size: 1.2rem;
-  transition: all 0.4s;
+  position: relative;
 }
-.contactSnsWrap .sns a:hover {
-  background: #fff;
-  color: #085a9f;
+.content .image {
+  width: 100%;
+  height: 100%;
+  background: url(https://www.mybiznow.kr/wp-content/uploads/2017/03/%ED%81%AC%EA%B8%B0%EB%B3%80%ED%99%98%EB%A9%94%EC%9D%B4%ED%81%AC.jpg)
+    center center/cover no-repeat;
 }
-/* scrollUP CSS */
-.scrollUp {
-  border: none;
-  border-radius: 3rem;
-  position: fixed;
-  width: 3rem;
-  height: 3rem;
-  bottom: 1.5rem;
-  right: 1.5rem;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(8, 90, 159, 0.7);
-}
-.scrollUp i {
-  width: 2rem;
-  height: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
+.content .text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 1);
 }
