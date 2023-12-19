@@ -49,8 +49,6 @@ section {
 }
 /*-----Intro-----*/
 .introWrap {
-  /* display: none; */
-  /* border: 1px solid red; */
   width: 100%;
   height: 100%;
   display: flex;
@@ -58,20 +56,16 @@ section {
   align-items: center;
 }
 .introWrap h1 {
-  /* display: none; */
   font-size: 8rem;
   transition: all 0.2s ease-in-out;
   letter-spacing: 1rem;
 }
 /*-----Work-----*/
 .workWrap {
-  /* border: 1px solid #fff; */
   display: none;
   width: 100%;
-  height: 100%;
 }
 .workText {
-  /* border: 1px solid pink; */
   width: 100%;
   height: 20rem;
   display: flex;
@@ -84,7 +78,6 @@ section {
   font-size: 7rem;
 }
 .categoryWrap {
-  /* border: 1px solid yellow; */
   width: 100%;
   padding: 1.5rem 2rem;
   display: flex;
@@ -112,19 +105,17 @@ section {
 }
 .contentWrap {
   width: 100%;
-  height: 130%;
+  height: 105rem;
 }
 .contentList {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .content {
   border: 1px solid #000;
-  width: 100%;
-  height: 100%;
+  width: 470px;
+  height: 350px;
   overflow: hidden;
   position: relative;
   transition: all 0.3s;
@@ -174,4 +165,21 @@ section {
 .content .text a:hover {
   background: none;
   color: #fff;
+}
+
+/*1600px*/
+
+@media screen and (max-width: 1560px) {
+}
+/* 1200px */
+@media screen and (max-width: 1024px) {
+}
+/* 900px */
+@media screen and (max-width: 899px) {
+}
+/* 680px */
+@media screen and (max-width: 679px) {
+}
+/* 540px */
+@media screen and (max-width: 539px) {
 }
