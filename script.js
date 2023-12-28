@@ -11,17 +11,30 @@ const changeText = () => {
   setTimeout(() => {
     introText.innerText = texts[currentIndex];
     introText.style.opacity = "1";
-    currentIndex = (currentIndex + 1) % texts.length;
 
-    if (currentIndex === 0) {
-      workWrap.style.display = "block";
-      window.scrollTo({
-        top: workWrap.offsetTop,
-        behavior: "smooth", // smooth scrolling effect
-      });
+    const previousIndex =
+      currentIndex === 0 ? texts.length - 1 : currentIndex - 1;
+
+    if (texts[previousIndex] === "PUBLISHER") {
+      console.log("Inside 'PUBLISHER' condition");
+      setTimeout(() => {
+        console.log("Inside second setTimeout");
+        // Your additional styles for "PUBLISHER" text
+        introText.style.letterSpacing = "3rem";
+        introText.style.textShadow = "0 0 10px #fff";
+
+        // Scroll to the next section after the styles for "PUBLISHER" are applied
+        window.scrollTo({
+          top: workWrap.offsetTop + workWrap.clientHeight, // Scroll to the bottom of the current section
+          behavior: "smooth",
+        });
+      }, 5000); // 5 seconds delay
     }
+
+    currentIndex = (currentIndex + 1) % texts.length;
   }, 200);
 };
+
 changeText();
 
 const intervalId = setInterval(() => {
