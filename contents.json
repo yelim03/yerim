@@ -1,30 +1,30 @@
 [
   {
     "name": "COS",
-    "tag": "#Web#반응형#클론코딩",
-    "src": "./img/cos-mockup.png",
-    "href": "https://www.cos.com/ko-kr/index.html",
+    "tag": "#Web #바닐라자바스크립트 #json #반응형 #클론코딩",
+    "src": "./img/cos.png",
+    "href": "https://cos-clone01.web.app/",
     "per": "100%"
   },
   {
     "name": "이마트24",
-    "tag": "#Web#반응형#클론코딩",
-    "src": "https://designbase.co.kr/wp-content/uploads/2021/10/freebies-38.jpg",
-    "href": "https://www.cos.com/ko-kr/index.html",
+    "tag": "#Web #바닐라자바스크립트 #json #반응형 #클론코딩",
+    "src": "./img/emart24.png",
+    "href": "https://emart24-clone.web.app/",
     "per": "100%"
   },
   {
-    "name": "네이버",
-    "tag": "#App#반응형#클론코딩",
-    "src": "https://designbase.co.kr/wp-content/uploads/2021/10/freebies-38.jpg",
-    "href": "https://www.naver.com/",
+    "name": "이디야",
+    "tag": "#Web #바닐라자바스크립트 #json #반응형 #클론코딩",
+    "src": "./img/ediya.png",
+    "href": "https://emart24-clone.web.app/",
     "per": "100%"
   },
   {
-    "name": "네이버",
-    "tag": "#App#반응형#클론코딩",
-    "src": "https://designbase.co.kr/wp-content/uploads/2021/10/freebies-38.jpg",
-    "href": "https://www.naver.com/",
+    "name": "감정일기장",
+    "tag": "#Web #React",
+    "src": "./img/emotionDiary.png",
+    "href": "https://yelim-emotion-diary.web.app/",
     "per": "100%"
   },
   {

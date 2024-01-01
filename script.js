@@ -16,19 +16,18 @@ const changeText = () => {
       currentIndex === 0 ? texts.length - 1 : currentIndex - 1;
 
     if (texts[previousIndex] === "PUBLISHER") {
-      console.log("Inside 'PUBLISHER' condition");
       setTimeout(() => {
-        console.log("Inside second setTimeout");
-        // Your additional styles for "PUBLISHER" text
-        introText.style.letterSpacing = "3rem";
+        introText.style.letterSpacing = "4rem";
         introText.style.textShadow = "0 0 10px #fff";
 
-        // Scroll to the next section after the styles for "PUBLISHER" are applied
-        window.scrollTo({
-          top: workWrap.offsetTop + workWrap.clientHeight, // Scroll to the bottom of the current section
-          behavior: "smooth",
-        });
-      }, 5000); // 5 seconds delay
+        setTimeout(() => {
+          workWrap.style.display = "block";
+          window.scrollTo({
+            top: workWrap.offsetTop,
+            behavior: "smooth",
+          });
+        }, 700);
+      }, 2700);
     }
 
     currentIndex = (currentIndex + 1) % texts.length;
@@ -77,6 +76,7 @@ fetch(url)
       contentTextTag.innerText = element.tag;
       contentTextPer.innerText = `기여도 : ${element.per}`;
       contentTextA.href = element.href;
+      contentTextA.target = "_blank";
       contentTextA.innerText = "보러가기";
 
       contentLi.appendChild(contentTextWrap);
