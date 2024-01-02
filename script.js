@@ -11,6 +11,7 @@ const changeText = () => {
   setTimeout(() => {
     introText.innerText = texts[currentIndex];
     introText.style.opacity = "1";
+    introText.style.transition = "0.3s";
 
     const previousIndex =
       currentIndex === 0 ? texts.length - 1 : currentIndex - 1;
@@ -84,12 +85,12 @@ fetch(url)
 
       const allBtn = document.querySelector(".allBtn");
       const webBtn = document.querySelector(".webBtn");
-      const appBtn = document.querySelector(".appBtn");
-      const publishBtn = document.querySelector(".publishBtn");
+      const cloneBtn = document.querySelector(".cloneBtn");
+      const exampleBtn = document.querySelector(".exampleBtn");
 
-      const filterWeb = "Web";
-      const filterApp = "App";
-      const filterPublish = "Publish";
+      const filterWeb = "반응형";
+      const filterClone = "클론코딩";
+      const filterExample = "실전예제";
 
       allBtn.addEventListener("click", () => {
         const contentItems = document.querySelectorAll(".content");
@@ -112,12 +113,12 @@ fetch(url)
         });
       });
 
-      appBtn.addEventListener("click", () => {
+      cloneBtn.addEventListener("click", () => {
         const contentItems = document.querySelectorAll(".content");
 
         contentItems.forEach((item) => {
           const tag = item.querySelector(".text p");
-          if (tag.innerText.includes(filterApp)) {
+          if (tag.innerText.includes(filterClone)) {
             item.style.display = "block";
           } else {
             item.style.display = "none";
@@ -125,12 +126,12 @@ fetch(url)
         });
       });
 
-      publishBtn.addEventListener("click", () => {
+      exampleBtn.addEventListener("click", () => {
         const contentItems = document.querySelectorAll(".content");
 
         contentItems.forEach((item) => {
           const tag = item.querySelector(".text p");
-          if (tag.innerText.includes(filterPublish)) {
+          if (tag.innerText.includes(filterExample)) {
             item.style.display = "block";
           } else {
             item.style.display = "none";
