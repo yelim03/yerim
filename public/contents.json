@@ -1,0 +1,65 @@
+[
+  {
+    "name": "COS",
+    "tag": "#Web #바닐라자바스크립트 #json #반응형 #클론코딩",
+    "src": "./img/cos.png",
+    "href": "https://cos-clone01.web.app/",
+    "per": "40%"
+  },
+  {
+    "name": "이마트24",
+    "tag": "#Web #바닐라자바스크립트 #json #반응형 #클론코딩",
+    "src": "./img/emart24.png",
+    "href": "https://emart24-clone.web.app/",
+    "per": "100%"
+  },
+  {
+    "name": "이디야",
+    "tag": "#Web #바닐라자바스크립트 #json #클론코딩",
+    "src": "./img/ediya.png",
+    "href": "https://ediya-clone-kyr.web.app/",
+    "per": "100%"
+  },
+  {
+    "name": "모두투어",
+    "tag": "#Web #반응형 #리디자인",
+    "src": "./img/modetour.png",
+    "href": "https://modetour-redesign.web.app/",
+    "per": "100%"
+  },
+  {
+    "name": "MBTI TEST",
+    "tag": "#Web #React #디자인 #실전예제",
+    "src": "./img/mbti.png",
+    "href": "https://mbti-kyr.web.app/",
+    "per": "100%"
+  },
+  {
+    "name": "감정일기장",
+    "tag": "#Web #React #실전예제",
+    "src": "./img/emotionDiary.png",
+    "href": "https://yelim-emotion-diary.web.app/",
+    "per": "100%"
+  },
+  {
+    "name": "크레이지아케이드 캐릭터 도감",
+    "tag": "#Web #실전예제",
+    "src": "./img/ca_char.png",
+    "href": "./example/01/index.html",
+    "per": "100%"
+  },
+  {
+    "name": "Youtube Music",
+    "tag": "#Web #실전예제 #리디자인",
+    "src": "./img/youtubemusic.png",
+    "href": "./example/02/index.html",
+    "per": "100%"
+  },
+  {
+    "name": "cyworld",
+    "tag": "#Web #실전예제",
+    "src": "./img/cyworld.png",
+    "href": "./example/03/index.html",
+    "per": "100%"
+  }
+]
