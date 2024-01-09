@@ -58,7 +58,8 @@ fetch(url)
       const contentTextH1 = document.createElement("h1");
       const contentTextTag = document.createElement("p");
       const contentTextPer = document.createElement("p");
-      const contentTextA = document.createElement("a");
+      const contentTextSite = document.createElement("a");
+      const contentTextDetail = document.createElement("a");
 
       contentLi.classList.add("content");
       contentLi.appendChild(contentImg);
@@ -71,14 +72,20 @@ fetch(url)
       contentTextWrap.appendChild(contentTextH1);
       contentTextWrap.appendChild(contentTextTag);
       contentTextWrap.appendChild(contentTextPer);
-      contentTextWrap.appendChild(contentTextA);
+      contentTextWrap.appendChild(contentTextSite);
+      contentTextSite.classList.add("contentTextSite");
+      contentTextWrap.appendChild(contentTextDetail);
+      contentTextDetail.classList.add("contentTextDetail");
 
       contentTextH1.innerText = element.name;
       contentTextTag.innerText = element.tag;
       contentTextPer.innerText = `기여도 : ${element.per}`;
-      contentTextA.href = element.href;
-      contentTextA.target = "_blank";
-      contentTextA.innerText = "보러가기";
+      contentTextSite.href = element.contentTextSiteHref;
+      contentTextSite.target = "_blank";
+      contentTextSite.innerText = "보러가기";
+      contentTextDetail.href = element.contentTextDetailHref;
+      contentTextDetail.target = "_blank";
+      contentTextDetail.innerText = ">상세설명보기";
 
       contentLi.appendChild(contentTextWrap);
       contentList.appendChild(contentLi);

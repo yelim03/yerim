@@ -3,63 +3,64 @@
     "name": "COS",
     "tag": "#Web #바닐라자바스크립트 #json #반응형 #클론코딩",
     "src": "./img/cos.png",
-    "href": "https://cos-clone01.web.app/",
-    "per": "40%"
+    "contentTextSiteHref": "https://cos-clone01.web.app/",
+    "per": "40%",
+    "contentTextDetailHref": "https://noiseless-ray-164.notion.site/cos-80b3f1ef424e4ef9a35237e704d7e8c1?pvs=4"
   },
   {
     "name": "이마트24",
     "tag": "#Web #바닐라자바스크립트 #json #반응형 #클론코딩",
     "src": "./img/emart24.png",
-    "href": "https://emart24-clone.web.app/",
-    "per": "100%"
+    "contentTextSiteHref": "https://emart24-clone.web.app/",
+    "per": "100%",
+    "contentTextDetailHref": "https://noiseless-ray-164.notion.site/eMart24-b56918fe5eda42e9a8e2f2bd0ca8ac90?pvs=4"
   },
   {
     "name": "이디야",
     "tag": "#Web #바닐라자바스크립트 #json #클론코딩",
     "src": "./img/ediya.png",
-    "href": "https://ediya-clone-kyr.web.app/",
-    "per": "100%"
+    "contentTextSiteHref": "https://ediya-clone-kyr.web.app/",
+    "per": "100%",
+    "contentTextDetailHref": "https://noiseless-ray-164.notion.site/EDIYA-COFFEE-9de7c2d1a90f40dd8ea7b90463df8f76?pvs=4"
   },
   {
     "name": "모두투어",
     "tag": "#Web #반응형 #리디자인",
     "src": "./img/modetour.png",
-    "href": "https://modetour-redesign.web.app/",
-    "per": "100%"
+    "contentTextSiteHref": "https://modetour-redesign.web.app/",
+    "per": "100%",
+    "contentTextDetailHref": "https://noiseless-ray-164.notion.site/707db38d590c4cf7a1147cc1dd607baa?pvs=4"
   },
   {
     "name": "MBTI TEST",
     "tag": "#Web #React #디자인 #실전예제",
     "src": "./img/mbti.png",
-    "href": "https://mbti-kyr.web.app/",
-    "per": "100%"
+    "contentTextSiteHref": "https://mbti-kyr.web.app/",
+    "per": "100%",
+    "contentTextDetailHref": "https://noiseless-ray-164.notion.site/MBTI-TEST-1a04d6bb234a4cc5a3ee4efb611643ad?pvs=4"
   },
   {
     "name": "감정일기장",
     "tag": "#Web #React #실전예제",
     "src": "./img/emotionDiary.png",
-    "href": "https://yelim-emotion-diary.web.app/",
-    "per": "100%"
+    "contentTextSiteHref": "https://yelim-emotion-diary.web.app/",
+    "per": "100%",
+    "contentTextDetailHref": "https://noiseless-ray-164.notion.site/React-9d9a19621fb7422e9e7899e5f6c0e43f?pvs=4"
   },
   {
     "name": "크레이지아케이드 캐릭터 도감",
     "tag": "#Web #실전예제",
     "src": "./img/ca_char.png",
-    "href": "./example/01/index.html",
-    "per": "100%"
+    "contentTextSiteHref": "./example/01/index.html",
+    "per": "100%",
+    "contentTextDetailHref": "./example/01/index.html"
   },
   {
     "name": "Youtube Music",
     "tag": "#Web #실전예제 #리디자인",
     "src": "./img/youtubemusic.png",
-    "href": "./example/02/index.html",
-    "per": "100%"
-  },
-  {
-    "name": "cyworld",
-    "tag": "#Web #실전예제",
-    "src": "./img/cyworld.png",
-    "href": "./example/03/index.html",
-    "per": "100%"
+    "contentTextSiteHref": "./example/02/index.html",
+    "per": "100%",
+    "contentTextDetailHref": "./example/02/index.html"
   }
 ]
